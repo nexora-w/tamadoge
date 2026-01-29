@@ -7,10 +7,10 @@ export default function Footer() {
         <>
             <div className={classes['button-container']}>
                 <span className={classes.subtitle}>Looking for a professional solution?</span>
-                <a href='https://www.linkedin.com/in/nazir-sina-kazimi-22924b92/' target='_blank' className={classes['big-link']}>
+                <span className={classes['big-link']}>
                     <strong>Let’s start a project</strong>
                     <img src="/static/svg/arrowAngle.svg" alt="" className={classes.arrow} />
-                </a>
+                </span>
             </div>
             <footer className={classes.footer}>
                 <div className={classes['inner-container']}>
@@ -23,9 +23,6 @@ export default function Footer() {
                                 </li>
                                 <li className={classes.item}>
                                     <a href='https://t.me/Rascal525' target='_blank' className={classes.link}>Telegram</a>
-                                </li>
-                                <li className={classes.item}>
-                                    <a href='https://www.linkedin.com/in/nazir-sina-kazimi-22924b92/' target='_blank' className={classes.link}>LinkedIn</a>
                                 </li>
                             </ul>
                             <ul className={`${classes.list} ${classes['list-2']}`}>

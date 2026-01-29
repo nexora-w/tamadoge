@@ -185,9 +185,6 @@ export default function Header() {
                     />
                 </div>
                 <div className={classes.right}>
-                    <a href='https://www.linkedin.com/in/nazir-sina-kazimi-22924b92/' target='_blank' className={classes.button}>
-                        <div className={classes.inner}>LinkedIn</div>
-                    </a>
                     <button onClick={toggleNavMenu} className={`${classes['mobile-menu-button']} mobile`}>
                         <img src="/static/svg/mobileMenuLines.svg" alt="" />
                     </button>
