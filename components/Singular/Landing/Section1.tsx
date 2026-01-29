@@ -29,7 +29,6 @@ export default function Section1() {
                     <div className={classes.info}>
                         <h1 className={classes.title}>
                             <span className={classes.white}>Tamadoge</span>
-                            <span className={classes.yellow}>Kazimi </span>
                             <span className={classes.white}> Soft<span className={classes.font}>ware</span> </span>
                             <span className={classes.white}> Engineer </span>
                         </h1>

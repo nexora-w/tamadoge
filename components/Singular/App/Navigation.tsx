@@ -89,7 +89,7 @@ export default function Navigation({ scrollToSection }: Props) {
                         </li> */}
                         <li className={classes.item}>
                             <a 
-                             href='https://github.com/nshinakazimi' 
+                             href='https://github.com/tamadoge-max' 
                              target='_blank' 
                              className={classes.link}>
                                 GitHub

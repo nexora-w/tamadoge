@@ -36,7 +36,7 @@ export default function Footer() {
                                     <a href='https://drive.google.com/file/d/1X3XHCpJ2lOlGTHEvFdZYJM1leNuKa6Ic/view?usp=sharing' target='_blank' className={classes.link}>CV | Resume</a>
                                 </li> */}
                                 <li className={classes.item}>
-                                    <a href='https://github.com/nshinakazimi' target='_blank' className={classes.link}>GitHub</a>
+                                    <a href='https://github.com/tamadoge-max' target='_blank' className={classes.link}>GitHub</a>
                                 </li>
                             </ul>
                             <ul className={`${classes.list} desktop`}>
