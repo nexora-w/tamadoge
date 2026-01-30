@@ -10,6 +10,7 @@ export interface BaseState {
   isNavigationLinkInvictaClicked: boolean;
   isNavigationLinkTonmainersClicked: boolean;
   isNavigationLinkEarngamesClicked: boolean;
+  isNavigationLinkHomeClicked: boolean;
   isPreloaderFinished: boolean;
 }
 
@@ -22,6 +23,7 @@ const initialBaseState: BaseState = {
   isNavigationLinkInvictaClicked: false,
   isNavigationLinkTonmainersClicked: false,
   isNavigationLinkEarngamesClicked: false,
+  isNavigationLinkHomeClicked: false,
   isPreloaderFinished: false,
 };
 
@@ -74,5 +76,5 @@ export const selectIsNavigationLinkQuickSmsClicked = (state: RootState) => state
 export const selectIsNavigationLinkInvictaClicked = (state: RootState) => state.base.isNavigationLinkInvictaClicked;
 export const selectIsNavigationLinkTonmainersClicked = (state: RootState) => state.base.isNavigationLinkTonmainersClicked;
 export const selectIsNavigationLinkEarngamesClicked = (state: RootState) => state.base.isNavigationLinkEarngamesClicked;
-
+export const selectIsNavigationLinkHomeClicked = (state: RootState) => state.base.isNavigationLinkHomeClicked;
 export default baseSlice.reducer;

@@ -1,5 +1,5 @@
 import { isTouchDevice } from '@/store';
-import { baseActions, selectIsNavigationLinkAboutClicked, selectIsNavigationLinkEarngamesClicked, selectIsNavigationLinkInvictaClicked, selectIsNavigationLinkPortfolioClicked, selectIsNavigationLinkQuickSmsClicked, selectIsNavigationLinkTonmainersClicked, selectIsPreloaderFinished, selectMobileNavOpenedIndicator } from '@/store/baseSlice';
+import { baseActions, selectIsNavigationLinkAboutClicked, selectIsNavigationLinkEarngamesClicked, selectIsNavigationLinkHomeClicked, selectIsNavigationLinkInvictaClicked, selectIsNavigationLinkPortfolioClicked, selectIsNavigationLinkQuickSmsClicked, selectIsNavigationLinkTonmainersClicked, selectIsPreloaderFinished, selectMobileNavOpenedIndicator } from '@/store/baseSlice';
 import classes from '@/styles/componentsStyles/App/header.module.scss';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -20,6 +20,7 @@ export default function Header() {
     const isNavigationLinkInvictaClicked = useSelector(selectIsNavigationLinkInvictaClicked);
     const isNavigationLinkTonmainersClicked = useSelector(selectIsNavigationLinkTonmainersClicked);
     const isNavigationLinkEarngamesClicked = useSelector(selectIsNavigationLinkEarngamesClicked);
+    const isNavigationLinkHomeClicked = useSelector(selectIsNavigationLinkHomeClicked);
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // DISABLE PAGE SCROLLING IF NAVIGATION MENU IS OPENED
@@ -47,6 +48,10 @@ export default function Header() {
         dispatch(baseActions.closeMobileNavOpenedIndicator());
 
         if (pathname === '/') {
+            if (type === '/') {
+                scrollTo(0, 0);
+                return;
+            }
             if (!pinSpacer) return;
 
             if (window.innerWidth < 850) {
@@ -143,6 +148,10 @@ export default function Header() {
     useEffect(() => {
         
         setTimeout(() => {
+            if (isNavigationLinkHomeClicked) {
+                scrollToSection('/');
+                dispatch(baseActions.isNavigationLinkClicked({type: 'home', value: false}));
+            }
             if (isNavigationLinkPortfolioClicked) {
                 scrollToSection('portfolio');
                 dispatch(baseActions.isNavigationLinkClicked({type: 'portfolio', value: false}));
@@ -185,6 +194,9 @@ export default function Header() {
                     />
                 </div>
                 <div className={classes.right}>
+                    <button type="button" onClick={() => scrollToSection('/')} className={classes.link}>
+                        Let's talk
+                    </button>
                     <button onClick={toggleNavMenu} className={`${classes['mobile-menu-button']} mobile`}>
                         <img src="/static/svg/mobileMenuLines.svg" alt="" />
                     </button>

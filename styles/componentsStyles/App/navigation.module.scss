@@ -2,102 +2,112 @@
 
 .navigation {
     display: flex;
-    align-items: flex-start;
-    
-    .dropdown-container {
-        position: relative;
-        z-index: 1000;
+    align-items: center;
+    gap: 0.5rem;
+}
 
-        &:not(:last-of-type) {
-            margin-right: 2rem;
-        }
+.list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25rem 0;
+}
 
-        .dropdown-opener {
-            cursor: pointer;
-            transition: all .3s;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: .5rem 1.6rem .5rem;
-            color: var(--color-white);
-            border-radius: 2.6rem;
+.item {
+    display: flex;
+    align-items: center;
+}
 
-            span {
-                display: inline-block;
-                margin-right: 1rem;
-            }
-            
-            .icon {
-                width: 1rem;
-                transition: all .3s;
-                margin-bottom: -.3rem;
+.link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    color: var(--color-white);
+    background: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
 
-                &.active {
-                    transform: rotate(-180deg);
-                }
-            }
-        }
-
-        .dropdown {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 12rem;
-            transition: all .3s;
-            background-color: #141319;
-            padding:  .8rem 0;
-            border-radius: 1.7rem;
-
-            .list {
-                text-align: center;
-
-                .item {
-                    display: flex;
-                    align-items: center;
-                    font-size: 1.4rem;
-                    width: 100%;
-
-                    .link {
-                        width: 100%;
-                        border-radius: .5rem;
-                        text-align: left;
-                        padding: .5rem 0 .5rem 1.6rem;
-
-                        &:hover {
-                            background-color: rgba(255, 255, 255, .05);
-                            color: var(--color-orange);
-                        }
-                    }
-                }
-            }
-        }
+    &:hover {
+        color: var(--color-orange);
+        background-color: rgba(255, 255, 255, 0.04);
     }
+}
 
-    .list {
+// Contacts dropdown
+.dropdown-container {
+    position: relative;
+    z-index: 1000;
+}
 
-        .subtitle {
-            font-size: 1.4rem;
-            color: var(--color-grey);
-            display: inline-block;
-            margin-bottom: 1.2rem;
-        }
+.dropdown-opener {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    color: var(--color-white);
+    background: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease;
 
-        // .link {
-            // display: inline-block;
-            // margin-bottom: .9rem;
-            // text-shadow: 0px 0 4px rgba(0, 0, 0, 1);
+    &:hover {
+        color: var(--color-orange);
+        background-color: rgba(255, 255, 255, 0.04);
+    }
+}
 
-            // &:not(:last-of-type) {
-            //     margin-right: 10rem;
-    
-            //     @media only screen and (max-width: 1100px) {
-            //         margin-right: 6rem;
-            //     }
-            // }
+.dropdown-icon {
+    width: 1rem;
+    transition: transform 0.2s ease;
+}
 
-            // &:hover {
-            //     color: var(--color-orange);
-            // }
-        // }
+.dropdown-icon--open {
+    transform: rotate(-180deg);
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.25rem;
+    min-width: 12rem;
+    background-color: #141319;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.dropdown--closed {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-item {
+    display: block;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: color 0.2s ease, background-color 0.2s ease;
+
+    &:hover {
+        color: var(--color-orange);
+        background-color: rgba(255, 255, 255, 0.05);
     }
 }
