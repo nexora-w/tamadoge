@@ -51,7 +51,7 @@ export default function Navigation({ scrollToSection }: Props) {
                     <ul className={classes['dropdown-list']} onClick={() => setIsContactsOpen(false)}>
                         <li className={classes['dropdown-item']}>
                             <a
-                                href="https://t.me/Rascal525"
+                                href="https://t.me/tamadoge_dev"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={classes['dropdown-link']}

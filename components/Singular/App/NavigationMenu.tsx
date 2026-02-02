@@ -43,7 +43,7 @@ export default function NavigationMenu({ scrollToSection }: Props) {
                     </li>
                     <li className={classes.item}>
                         <a 
-                            href='https://t.me/Rascal525' 
+                            href='https://t.me/tamadoge_dev' 
                             target='_blank' 
                             className={classes.link}>
                             Telegram

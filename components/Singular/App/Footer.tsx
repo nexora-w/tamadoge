@@ -22,7 +22,7 @@ export default function Footer() {
                                     <span className={classes.subtitle}>Contact me</span>
                                 </li>
                                 <li className={classes.item}>
-                                    <a href='https://t.me/Rascal525' target='_blank' className={classes.link}>Telegram</a>
+                                    <a href='https://t.me/tamadoge_dev' target='_blank' className={classes.link}>Telegram</a>
                                 </li>
                             </ul>
                             <ul className={`${classes.list} ${classes['list-2']}`}>
