@@ -15,44 +15,44 @@ const PROJECTS: Project[] = [
         timeSpent: '2 months'
     },
     {
-        id: 'quicksms',
-        name: 'Quick SMS',
-        cover: 'sms',
-        link: 'https://quicksms.io',
-        description: 'QuickSMS.io revolutionizes SMS marketing with its non-VOIP number rental system, providing a secure gateway to SMS campaigns, bulk messaging, and message marketing.',
-        technologies: 'VUE - TypeScript - Scss',
-        staff: '2 Designers - 2 Frontend devs',
-        timeSpent: '1 month'
-    },
-    {
-        id: 'heavenspro',
-        name: 'Heavens Pro',
-        cover: 'heavensPro',
-        link: 'https://heavens.pro',
-        description: 'Developing unique IT business solutions since 2020. Symphony of design, tech prowess, and impeccable quality.',
-        technologies: 'NEXT - TypeScript - Scss',
-        staff: '2 Designers - 2 Frontend devs',
-        timeSpent: '2 months'
-    },
-    {
-        id: 'invicta',
-        name: 'Invicta',
-        cover: 'invicta',
-        link: 'https://release-invictamarket.heavens.pro',
-        description: 'Explore Invicta, your go-to store system that sells gift cards from lots of brands. Navigate a visually stunning website featuring abstract figures and 3D card models.',
-        technologies: 'NUXT - TypeScript - Scss',
+        id: 'cs2dle',
+        name: 'CS2DLE',
+        cover: 'cs2dle',
+        link: 'http://cs2dle.net',
+        description: 'CS2DLE is Daily Counter-Strike 2 Puzzle Challenge',
+        technologies: 'NEXT - TypeScript',
         staff: '1 Designer - 1 Frontend dev',
-        timeSpent: '3 month'
+        timeSpent: '2 month'
     },
     {
-        id: 'kerma',
-        name: 'Kerma',
-        cover: 'kerma',
-        link: 'https://kerma.netlify.app',
-        description: `Dive into Kerma, a fun crypto (ETH) game where the biggest bet takes the prize. The website's pink design and a cute 3D winged cat make the game lively.`,
-        technologies: 'NUXT - TypeScript - Scss',
-        staff: '2 Designers - 1 Frontend dev',
-        timeSpent: '1 month'
+        id: 'neokcs',
+        name: 'NeoKCS',
+        cover: 'neokcs',
+        link: 'http://neokcs.com',
+        description: 'NeoKCS is personal website for gambling streamers',
+        technologies: 'NEXT - TypeScript',
+        staff: '',
+        timeSpent: '2 weeks'
+    },
+    {
+        id: 'steamupgrade',
+        name: 'Steam Upgrade',
+        cover: 'steamupgrade',
+        link: 'http://steamupgrade.com/',
+        description: 'Steam Upgrade is a platform that allows you to upgrade your Steam account to a higher level, with a variety of features and benefits.',
+        technologies: 'React - JavaScript - Express',
+        staff: '',
+        timeSpent: '2 month'
+    },
+    {
+        id: 'csgrind',
+        name: 'csgrind',
+        cover: 'csgrind',
+        link: 'https://csgrind.com/',
+        description: 'csgrind is a platform that allows you to grind your CS2 account to a higher level, with a variety of features and benefits.',
+        technologies: 'React - JavaScript - Express',
+        staff: '',
+        timeSpent: '2 month'
     },
     {
         id: 'earngames',
@@ -113,17 +113,7 @@ const PROJECTS: Project[] = [
         technologies: 'VUE - TypeScript - Scss',
         staff: '1 Designer - 2 Frontend devs',
         timeSpent: '3 weeks'
-    },
-    {
-        id: 'mikhailwoodo',
-        name: 'Mikhail Woodo',
-        cover: 'mikhailPortfolio',
-        link: 'https://woodo.pages.dev',
-        description: 'Explore the portfolio of Mikhail, a skilled web and UI/UX designer, showcasing a collection of successful projects and stunning designs.',
-        technologies: 'HTML - JavaScript - Scss',
-        staff: '1 Designer - 1 Frontend dev',
-        timeSpent: '2 weeks'
-    },
+    }
 ];
 
 export default function Section4() {
