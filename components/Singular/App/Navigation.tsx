@@ -71,7 +71,7 @@ export default function Navigation({ scrollToSection }: Props) {
                         </li>
                         <li className={classes['dropdown-item']}>
                             <a
-                                href="https://discord.gg/C6S2ewFuCn"
+                                href="https://discord.com/users/294033815922540544"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={classes['dropdown-link']}
